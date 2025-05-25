@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Coke & Popcorn</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+ 
+</head>
+<body class="min-h-screen relative">
+    <!-- Full-screen background -->
+    <div class="fixed inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80&contrast=-20" alt="Cinema Background" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-overlay"></div>
+    </div>
+
+    <!-- Content overlay -->
+    <div class="relative z-10 min-h-screen flex flex-col items-center justify-center text-white px-4">
+        <!-- Logo and Title -->
+        <div class="text-center mb-12 animate-fade-in">
+            <h1 class="text-6xl font-bold mb-4">Coke & Popcorn</h1>
+            <p class="text-2xl text-gray-300">Your Ultimate Movie Experience</p>
+        </div>
+
+        <!-- Main content -->
+        <div class="text-center max-w-2xl mx-auto mb-12 animate-fade-in" style="animation-delay: 0.3s;">
+            <h2 class="text-4xl font-semibold mb-6">
+                Welcome to the World of Cinema
+            </h2>
+            <p class="text-xl mb-8 text-gray-300">
+                Experience the magic of movies in premium theaters. Book your tickets now and immerse yourself in entertainment.
+            </p>
+            
+            <!-- CTA Button -->
+            <button id="bookNowBtn" 
+                    class="bg-indigo-600 text-white px-12 py-4 rounded-lg text-xl font-semibold
+                           hover:bg-indigo-700 scale-on-hover shadow-lg hover:shadow-xl">
+                Book Now
+            </button>
+        </div>
+
+        <!-- Features -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center animate-fade-in" 
+             style="animation-delay: 0.6s;">
+            <!-- Feature 1 -->
+            <div class="p-6 rounded-lg backdrop-blur-sm bg-black bg-opacity-20 hover:bg-opacity-30 transition-all">
+                <div class="mb-4">
+                    <svg class="w-12 h-12 mx-auto text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                              d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Latest Movies</h3>
+                <p class="text-gray-300">Access to all the newest releases</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="p-6 rounded-lg backdrop-blur-sm bg-black bg-opacity-20 hover:bg-opacity-30 transition-all">
+                <div class="mb-4">
+                    <svg class="w-12 h-12 mx-auto text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Premium Experience</h3>
+                <p class="text-gray-300">High-quality screens and sound</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="p-6 rounded-lg backdrop-blur-sm bg-black bg-opacity-20 hover:bg-opacity-30 transition-all">
+                <div class="mb-4">
+                    <svg class="w-12 h-12 mx-auto text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Easy Booking</h3>
+                <p class="text-gray-300">Simple and fast ticket booking</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading animation -->
+    <script>
+        document.getElementById('bookNowBtn').addEventListener('click', function() {
+            // Add loading state to button
+            this.innerHTML = 'Loading...';
+            this.classList.add('opacity-75', 'cursor-wait');
+            
+            // Redirect after a short delay to show loading state
+            setTimeout(() => {
+                window.location.href = 'login.html';
+            }, 500);
+        });
+    </script>
+</body>
+</html>

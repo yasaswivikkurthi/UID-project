@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coke & Popcorn - Book Your Cinema Tickets</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="movies.css">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navigation Bar with Search -->
+    <nav class="bg-indigo-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white text-2xl font-bold">Coke & Popcorn</h1>
+            <div class="flex items-center space-x-4">
+                <input 
+                    type="text" 
+                    placeholder="Search movies..." 
+                    class="px-3 py-1 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-300"
+                />
+                <button id="profile-btn" class="text-white hover:text-gray-200">Profile</button>
+                <button id="logout-btn" class="text-white hover:text-gray-200">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    
+
+
+    <!-- Hero Section -->
+    <div class="relative h-96">
+        <img src="https://png.pngtree.com/thumb_back/fh260/background/20230617/pngtree-blank-movie-ticket-with-popcorn-bucket-filmstrip-clapperboard-and-camera-in-image_3623915.jpg" alt="Movie Banner" class="w-full h-full object-cover"/>
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div class="text-center">
+                <h2 class="text-white text-4xl font-bold mb-4">Book Your Movie Tickets</h2>
+                <p class="text-white text-xl mb-8">Experience the magic of cinema in your favorite theaters</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Now Showing Section -->
+    <div class="container mx-auto px-4 py-8">
+        <h3 class="section-title">Now Showing</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Movie Card 1 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/Mission--Impossible---The-Final-Reckoning--e1a5e790-aed8-11ef-921a-6b45cf008ba4.jpg?format=webp&imwidth=576" alt="The Mission Impossible-The Final Reckoning" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">The Mission: Impossible</h4>
+                    <p class="movie-details">Advanture,Action • 2h 49m</p>
+                    <button class="book-tickets" id="booking"><a href="booking.html">Book Tickets</a></button>
+                </div>
+            </div>
+           
+
+            <!-- Movie Card 2 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDy3eua9GEr2PNnGrW2hM7OmmhbcihhOv1ObFEL09sseJRIoWWqAhai_TFFteqtA38jVdwkw" alt="They Call Him OG" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">They Call Him OG</h4>
+                    <p class="movie-details">Action, Crime • 2h 45m</p>
+                    <button class="book-tickets" id="booking"><a href="booking.html">Book Tickets</a></button>
+                </div>
+            </div>
+ 
+            
+            <!-- Movie Card 3 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/Thunderbolt%20New-34fbf050-2a72-11f0-b430-0d9e8fb460e2.jpeg?format=webp&imwidth=576" alt="Thunderbolts" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">Thunderbolts*</h4>
+                    <p class="movie-details">Action,Advanture • 2h 07m</p>
+                    <button class="book-tickets" id="booking"><a href="booking.html">Book Tickets</a></button>
+                </div>
+            </div> 
+           
+            <!-- Movie Card 4 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/RAID-2-c05b51a0-21b6-11f0-a22b-459bceb33eba.jpg?format=webp&imwidth=576" alt="Raid 2" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">Raid 2</h4>
+                    <p class="movie-details">Crime,Thriller • 2h 19m</p>
+                    <button class="book-tickets" id="booking"><a href="booking.html">Book Tickets</a></button>
+                </div>
+            </div>
+
+            <!-- Movie Card 5 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/ace-e3f69fe0-2b0f-11f0-bd90-d94369f6f4ca.jpeg?format=webp&imwidth=576" alt="ace" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">ace</h4>
+                    <p class="movie-details">Crime,Thriller • 2h 37m</p>
+                    <button class="book-tickets" id="booking"><a href="booking.html">Book Tickets</a></button>
+                </div>
+            </div>
+
+            <!-- Movie Card 6 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/Maaman-68b5fbd0-1c25-11f0-b2bf-d9c854ed10fa.jpg?format=webp&imwidth=576" alt="maaman" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">maaman</h4>
+                    <p class="movie-details">Drama,Family • 2h 33m</p>
+                    <button class="book-tickets" id="booking"><a href="booking.html">Book Tickets</a></button>
+                </div>
+            </div>
+
+             <!-- Movie Card 7 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/SINGLE-24505d20-2a42-11f0-b426-a50671acfc24.jpg?format=webp&imwidth=576" alt="SINGLE" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">SINGLE</h4>
+                    <p class="movie-details">Comedy,Romance • 2h 10m</p>
+                    <button class="book-tickets" id="booking"><a href="booking.html">Book Tickets</a></button>
+                </div>
+            </div>
+
+            <!-- Movie Card 8 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/Hit_-af5cf240-f7ff-11ef-aecf-15b19aa2669c.jpg?format=webp&imwidth=576" alt="HIT:The Third Case" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">HIT:The Third Case</h4>
+                    <p class="movie-details">Crime,Thriller • 2h 38m</p>
+                    <button class="book-tickets" id="booking"><a href="booking.html">Book Tickets</a></button>
+                </div>
+            </div>
+
+            <!-- Movie Card 9 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/A-Minecraft-Movie-(including-IMAX)---ee7728b0-0eed-11f0-9bad-6531fa08ee84.jpg?format=webp&imwidth=576" alt="Minecraft" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">Minecraft</h4>
+                    <p class="movie-details">Advanture,Action • 1h 49m</p>
+                    <button class="book-tickets" id="booking"><a href="booking.html">Book Tickets</a></button>
+                </div>
+            </div>
+
+            <!-- Movie Card 10 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/PRINCE-%26-FAMILY--daeae850-2288-11f0-a22b-459bceb33eba.jpg?format=webp&imwidth=576" alt="Tourist Fmily" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">Tourist Family</h4>
+                    <p class="movie-details">Comedy,Family Drama • 2h 30m</p>
+                    <button class="book-tickets" id="booking"><a href="booking.html">Book Tickets</a></button>
+                </div>
+            </div>
+
+            <!-- Movie Card 11 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/Kesari-Chapter-2-2084e490-3627-11f0-93a3-df85bc784697.jpg?format=webp&imwidth=576" alt="Kesari 2" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">Kesari Chapter 2</h4>
+                    <p class="movie-details">Historical Drama • 2h 30m</p>
+                    <button class="book-tickets" id="booking"><a href="booking.html">Book Tickets</a></button>
+                </div>
+            </div>
+
+            <!-- Movie Card 12 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/Lovely---4911d730-263a-11f0-b426-a50671acfc24-b1c2f370-2f2e-11f0-b426-a50671acfc24.jpg?format=webp&imwidth=576" alt="Lovely" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">Lovely</h4>
+                    <p class="movie-details">Fantasy,Drama • 1h 56m</p>
+                    <button class="book-tickets" id="booking"><a href="booking.html">Book Tickets</a></button>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- Coming Soon Section -->
+    <div class="container mx-auto px-4 py-8">
+        <h3 class="section-title">Coming Soon</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+           <!-- Coming Soon Movie 1 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/Karater-76c96be0-f04b-11ef-8cb3-05c6c7d276fb.jpg?format=webp&imwidth=582" alt="Karate kid" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">Karate Kid:Legends</h4>
+                    <p class="movie-details">Release Date: MAY, 2025</p>
+                    <button class="notification-button">Get Notified</button>
+                </div>
+            </div>
+
+            <!-- Coming Soon Movie 2 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/MassJathara-galery-e9c1e380-9ab9-11ef-a547-a3a8f57842ad.jpg" alt="MASS JATHARA" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">MASS JATHARA</h4>
+                    <p class="movie-details">Release Date: MAY, 2025</p>
+                    <button class="notification-button">Get Notified</button>
+                </div>
+            </div>
+
+            <!-- Coming Soon Movie 3 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/Lio-4cbf4280-b080-11ef-86c3-e76b5990f01d.jpg?format=webp&imwidth=582" alt="Lilo & Stitch" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">Lilo & Stitch</h4>
+                    <p class="movie-details">Release Date: MAY, 2025</p>
+                    <button class="notification-button">Get Notified</button>
+                </div>
+            </div>
+
+            <!-- Coming Soon Movie 4 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/Ballerina%20(3)-42106d90-202f-11f0-a22b-459bceb33eba.jpg?format=webp&imwidth=582" alt="Ballerina" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">Ballerina</h4>
+                    <p class="movie-details">Release Date: JUN, 2025</p>
+                    <button class="notification-button">Get Notified</button>
+                </div>
+            </div>
+
+            <!-- Coming Soon Movie 5 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/Howtotrain-your-dragon---IMAX-Poster-0b38ce10-a727-11ef-8f1f-a7114947674f.jpg?format=webp&imwidth=582" alt="How To Train Your Dragon" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">How To Train Your Dragon</h4>
+                    <p class="movie-details">Release Date: JUN, 2025</p>
+                    <button class="notification-button">Get Notified</button>
+                </div>
+            </div>
+
+            <!-- Coming Soon Movie 6 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/kubera-a3beada0-f7f7-11ef-b63b-eb1f8a63c930.jpg?format=webp&imwidth=582" alt="Kubera" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">Kubera</h4>
+                    <p class="movie-details">Release Date: JUN, 2025</p>
+                    <button class="notification-button">Get Notified</button>
+                </div>
+            </div>
+
+            <!-- Coming Soon Movie 7-->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/LOC-476d2a30-1139-11f0-ac8c-93d19273dc5b.jpg?format=webp&imwidth=582" alt="Life of chuck" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">Life of Chuck</h4>
+                    <p class="movie-details">Release Date: JUN, 2025</p>
+                    <button class="notification-button">Get Notified</button>
+                </div>
+            </div>
+
+             <!-- Coming Soon Movie 8 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/posterrrsupermann-6a865020-308b-11f0-aa9f-8fefdb33bbbf.jpg?format=webp&imwidth=582" alt="Superman" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">Superman</h4>
+                    <p class="movie-details">Release Date: JUN, 2025</p>
+                    <button class="notification-button">Get Notified</button>
+                </div>
+            </div>
+
+            <!-- Coming Soon Movie 9 -->
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/The-Bad-Guys-2--65b01e60-9cfb-11ef-8f07-af1853a5bdf2.jpg?format=webp&imwidth=582" alt="The Bad guys" />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                    <h4 class="movie-title">The Bad Guys 2</h4>
+                    <p class="movie-details">Release Date: AUG, 2025</p>
+                    <button class="notification-button">Get Notified</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        
+
+    <!-- Profile Modal -->
+    <div id="profile-modal" class="modal">
+        <div class="modal-content">
+            <h2 class="text-2xl font-bold mb-4">User Profile</h2>
+            <form id="profile-form">
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-1" for="profile-name">Name</label>
+                    <input type="text" id="profile-name" class="profile-input" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-1" for="profile-email">Email</label>
+                    <input type="email" id="profile-email" class="profile-input" required>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button type="submit" class="save-profile">Save Profile</button>
+                    <button type="button" id="close-profile-modal" class="close-button">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Logout Confirmation -->
+    <div id="logout-modal" class="modal">
+        <div class="modal-content text-center">
+            <h2 class="confirm">Confirm Logout</h2>
+            <p class="mb-6">Are you sure you want to log out?</p>
+            <div class="logout-options">
+                <button id="confirm-logout" class="logout-confirm">Yes, Logout</button>
+                <button id="cancel-logout" class="logout-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-8">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="font-bold mb-4">About Coke & Popcorn</h4>
+                <p>Your one-stop destination for movie tickets booking.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="termsofservice.html" class="hover:text-gray-300">Terms of Service</a></li>
+                    <li><a href="privacypolicy.html" class="hover:text-gray-300">Privacy Policy</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-300">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Movies.js">
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Tickets - MoviesGO</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="booking.css">
+  
+</head>
+<body class="min-h-screen relative">
+
+  <!-- Background -->
+  <div class="fixed inset-0">
+    <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cinema Background" class="background-image">
+    <div class="background-overlay"></div>
+  </div>
+
+  <!-- Form Container -->
+  <div class="formContainer">
+    <div class="login form animate-fade-in" id="bookingForm">
+      <!-- Header -->
+      <div class="text-center">
+        <h2 class="remainder">Book Your Tickets</h2>
+        <p class="remainder">Fill the details below</p>
+      </div>
+
+      <!-- Booking Form -->
+      <form class="space-y-6" id="ticketForm">
+        <div class="space-y-4">
+          <div>
+            <label for="name" class="text">Name</label>
+            <input id="name" name="name" type="text" required class="input">
+          </div>
+          <div>
+            <label for="email" class="text">Email</label>
+            <input id="email" name="email" type="email" required class="input">
+          </div>
+          <div>
+            <label for="tickets" class="text">No. of Tickets</label>
+            <input id="tickets" name="tickets" type="number" min="1" required class="input">
+          </div>
+          <div>
+            <label for="date" class="text">Date</label>
+            <input id="date" name="date" type="date" required class="input">
+          </div>
+        </div>
+
+        <div>
+          <button type="submit" class="submit">Confirm Booking</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Confirmation Message -->
+    <div id="confirmationMessage" class="hidden">🎉 Booking Confirmed! Enjoy your movie.</div>
+  </div>
+
+
+  <script src="booking.js">
+
+    </script>
+</body>
+</html>

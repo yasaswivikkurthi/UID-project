@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - Coke & Popcorn</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="booking.css">
+
+</head>
+<body class="min-h-screen relative">
+    <!-- Background -->
+    <div class="fixed inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80&contrast=-20" alt="Cinema Background" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-overlay"></div>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="relative z-10 min-h-screen flex flex-col items-center justify-center px-4">
+        <div class="max-w-md w-full space-y-8 backdrop-blur-sm bg-black bg-opacity-50 p-10 rounded-xl animate-fade-in">
+            <!-- Header -->
+            <div class="text-center">
+                <h2 class="text-4xl font-bold text-white mb-2">Create Account</h2>
+                <p class="text-gray-300">Sign up to start your movie experience</p>
+            </div>
+
+            <!-- Form -->
+            <form class="mt-8 space-y-6" id="registrationForm">
+                <div class="space-y-4">
+                    <div>
+                        <label for="name" class="text-white">Full Name</label>
+                        <input id="name" name="name" type="text" required 
+                               class="reg"
+                               placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label for="email" class="text-white">Email Address</label>
+                        <input id="email" name="email" type="email" required 
+                               class="reg"
+                               placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <label for="mobile" class="text-white">Mobile Number</label>
+                        <input id="mobile" name="mobile" type="tel" required 
+                               class="reg"
+                               placeholder="Enter your mobile number"
+                               pattern="[0-9]{10}"
+                               title="Please enter a 10-digit mobile number">
+                    </div>
+                    <div>
+                        <label for="password" class="text-white">New Password</label>
+                        <input id="password" name="password" type="password" required 
+                               class="reg"
+                               placeholder="Create a strong password"
+                               minlength="8">
+                    </div>
+                    <div>
+                        <label for="confirm-password" class="text-white">Confirm Password</label>
+                        <input id="confirm-password" name="confirm-password" type="password" required 
+                               class="reg"
+                               placeholder="Confirm your password"
+                               minlength="8">
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" 
+                            class="submit">
+                        Create Account
+                    </button>
+                </div>
+            </form>
+
+            <!-- Login link -->
+            <div class="text-center text-gray-300">
+                Already have an account? 
+                <a href="login.html" class="link">Login</a>
+            </div>
+        </div>
+    </div>
+
+    
+     <script src="registration.js">
+
+    </script>
+</body>
+</html>

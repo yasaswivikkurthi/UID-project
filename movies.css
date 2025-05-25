@@ -1,0 +1,163 @@
+.movie-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-image {
+    position: relative;
+    width: 100%;
+    padding-top: 150%; /* 2:3 aspect ratio for movie posters */
+    overflow: hidden;
+}
+
+.movie-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.movie-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.movie-details {
+    color: #4B5563;
+    margin-bottom: 1rem;
+}
+
+.book-tickets {
+    background-color: #8d3645;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    width: 100%;
+    margin-top: auto;
+}
+
+.book-tickets:hover {
+    background-color: #66052f;
+}
+
+.notification-button {
+    background-color: #22C55E;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    width: 100%;
+    margin-top: auto;
+}
+
+.notification-button:hover {
+    background-color: #16A34A;
+}
+
+.notification-button.active {
+    background-color: white;
+    color: #22C55E;
+    border: 2px solid #22C55E;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.profile-input {
+    width: 100%;
+    border: 1px solid #D1D5DB;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.save-profile {
+    background-color: #601111;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.save-profile:hover {
+    background-color: #601111;
+}
+
+.close-button {
+    background-color: #E5E7EB;
+    color: #374151;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.close-button:hover {
+    background-color: #D1D5DB;
+}
+
+.logout-confirm {
+    background-color: #DC2626;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin-right: 1rem;
+}
+
+.logout-confirm:hover {
+    background-color: #B91C1C;
+}
+
+.logout-cancel {
+    background-color: #E5E7EB;
+    color: #374151;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.logout-cancel:hover {
+    background-color: #D1D5DB;
+}
+
+.logout-options {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 50;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    width: 80%;
+    max-width: 32rem;
+    margin: 6rem auto;
+}
+
+.confirm {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
