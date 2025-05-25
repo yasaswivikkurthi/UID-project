@@ -1,2 +1,2 @@
 # Uid-project
-Movie Tickets Bokking
+Movie Tickets Booking
